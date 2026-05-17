@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+
+    <h2><%= name %></h2>
+
+    <h1><%= title %></h1>
+
+    <ul>
+        <% definitions.forEach(function(item) { %>
+            <li>
+                <strong><%= item.term %>:</strong>
+                <%= item.definition %>
+            </li>
+        <% }); %>
+    </ul>
+
+</body>
+</html>
